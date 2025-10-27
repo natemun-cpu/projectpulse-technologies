@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body { background:#0A0F1F; color: #fff; }
+.gradient-hero { background: linear-gradient(90deg, #7c3aed, #f472b6, #22d3ee); }
+.card-sheen { box-shadow: 0 0 0 1px rgba(255,255,255,.06), 0 20px 80px rgba(124,58,237,.25); }
+a { text-decoration: none; }
