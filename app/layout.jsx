@@ -1,3 +1,5 @@
+import './globals.css';
+
 export const metadata = {
   title: { default: "ProjectPulse Technologies", template: "%s | ProjectPulse" },
   description: "Custom software, automation, and project systems that scale.",
