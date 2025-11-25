@@ -1,3 +1,86 @@
+import Link from "next/link";
+
+export const metadata = {
+  title: "Services | ProjectPulse",
+  description:
+    "Custom software, workflow automation, and project operating systems for founders who are done duct-taping tools together.",
+};
+
+const packages = [
+  {
+    name: "Launch System",
+    tag: "For founders getting their delivery out of their head and into a system.",
+    price: "From $4,500",
+    billing: "one-time",
+    highlights: [
+      "Systems audit + strategy intensive",
+      "Blueprint of your ideal delivery pipeline",
+      "Implementation of a core project operating system",
+      "1–2 high-impact automations (intake, handoff, or reporting)",
+      "Training session + recorded Loom library for your team",
+    ],
+  },
+  {
+    name: "Scale System",
+    tag: "For teams feeling the strain of growth and headcount.",
+    price: "From $9,500",
+    billing: "one-time",
+    highlights: [
+      "Everything in Launch System",
+      "Multi-team delivery architecture (Sales → Ops → Success)",
+      "Custom internal tools or dashboards",
+      "3–5 automations across your existing stack",
+      "Playbooks + documentation so new hires ramp faster",
+    ],
+    featured: true,
+  },
+  {
+    name: "Systems Partner Retainer",
+    tag: "For founders who want a fractional Head of Systems on speed dial.",
+    price: "From $2,000",
+    billing: "per month",
+    highlights: [
+      "Dedicated block of hours for improvements & experiments",
+      "Ongoing automation tweaks as your offers evolve",
+      "New dashboards, reports, and views as you scale",
+      "Priority support for issues, questions, and small builds",
+    ],
+  },
+];
+
+const carePlans = [
+  {
+    name: "Essentials Care",
+    price: "From $250",
+    billing: "per month",
+    highlights: [
+      "Managed hosting for your site or internal tools",
+      "Uptime monitoring & basic security updates",
+      "Monthly status report",
+    ],
+  },
+  {
+    name: "Growth Care",
+    price: "From $750",
+    billing: "per month",
+    highlights: [
+      "Everything in Essentials Care",
+      "Performance tuning & database housekeeping",
+      "1 small feature or automation tweak each month",
+    ],
+  },
+  {
+    name: "Partner Care",
+    price: "Custom",
+    billing: "engagement",
+    highlights: [
+      "Priority roadmap & feature support",
+      "Dedicated systems engineer on retainer",
+      "Co-design of new internal tools & dashboards",
+    ],
+  },
+];
+
 export default function HostingPage() {
   const tiers = [
     { name: "Launch", price: "$79/mo", setup: "$450", features: ["SSL + daily backups", "WP hardening & updates", "Email support (2 biz days)"] },
